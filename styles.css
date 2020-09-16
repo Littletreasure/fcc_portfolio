@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  font-family: "Architects Daughter", cursive;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+@media (max-width: 650px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header h2 {
+  font-size: 25px;
+  margin: 10px 25px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+}
+@media (max-width: 650px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+nav a {
+  padding: 0 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  margin-top: 70px;
+  font-family: "Balsamiq Sans", cursive;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+#welcome-section {
+  height: 100vh;
+  justify-content: center;
+}
+#welcome-section h1,
+#welcome-section h2,
+#welcome-section p {
+  margin: 30px;
+}
+h1 {
+  padding-top: 50px;
+}
+#projects {
+  background: #cccccc;
+  padding-bottom: 40px;
+  width: 100%;
+}
+#projects h1 {
+  margin-bottom: 30px;
+}
+.projects-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  column-gap: 40px;
+  row-gap: 40px;
+  box-sizing: border-box;
+}
+.project-tile {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 8px 4px #4d4d4d;
+  background: #999999;
+}
+.project-tile img {
+  width: 100%;
+}
+
+.project-tile a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.project-tile a:hover {
+  color: #4d4d4d;
+}
+
+footer {
+  margin: 0;
+  padding-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+footer h2 {
+  margin: 20px;
+}
+.contact {
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+.contact a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+i {
+  margin-right: 5px;
+}
+.contact a:hover {
+  color: #4d4d4d;
+}
